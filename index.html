@@ -1,12 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="shortuc icon" href="./assets/logo-transparente (1).ico">
+    <link rel="shortuc icon" href="./assets/logo-transparente (1).ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <img src="assets/image.png" alt="Logo de mi aplicación" class="logo">
+    <h1>Aplicación de Tareas</h1>
+    <form action="" id="inputUsuario">
+        <input type="text" placeholder="Escribe tu tarea aquí..">
+        <input type="submit" value="+" id="btnAgregar">
+
+        <div id="lista" class="contenedor-lista">
+            <div class="contenedor-tarea" id="1">
+                <label >
+                    <input type="checkbox"> 
+                    Tarea 1
+                </label>
+                <img src="assets/trash-icon-svg-download-png-1608192.webp" alt="eliminar" class="btnEliminar">
+            </div>
+            <div id="stats">
+                Tareas pendientes: 5  Tareas completadas: 2
+            </div>
+
+
+        </div>
+    </form>
+    <script src="js/script.js"></script>
 </body>
 </html>
